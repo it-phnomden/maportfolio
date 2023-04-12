@@ -6,12 +6,12 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 
 const App = () => {
-    return<>
+    return<div className="w-screen h-screen bg-[rgb(13,17,23)]">
         <NavBar />
         <Home />
         <AboutMe />
         <Experience />
         <Contact />
-    </>
+    </div>
 }
 export default App;
