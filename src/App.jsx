@@ -6,7 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 
 const App = () => {
-    return<div className="w-screen h-screen bg-[rgb(13,17,23)]">
+    return<div className="w-screen h-screen bg-white dark:bg-[rgb(13,17,23)]">
         <NavBar />
         <Home />
         <AboutMe />
