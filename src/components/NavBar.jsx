@@ -81,7 +81,7 @@ const NavBar = () => {
             
             <div
             onClick={()=> setNav(!nav)}
-            className="cursor-pointer hidden max-sm:flex"
+            className="cursor-pointer hidden max-md:flex"
             >
                 {nav? <FaTimes />: <FaBars />}
             </div>
