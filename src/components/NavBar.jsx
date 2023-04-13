@@ -52,7 +52,6 @@ const NavBar = () => {
                         setDarkMode(false)
                         setThemeMode(lightTheme);
                     }}
-                    // className={`px-3 py-2 cursor-pointer rounded-l-full ${darkMode?'bg-[rgb(30,30,32)] text-black':'bg-[rgb(43,47,66)] text-white'}
                     className={`px-3 py-2 cursor-pointer rounded-l-full ${darkMode?'opacity-50':'opacity-100'} hover:opacity-20`}>
                         <BsFillSunFill size={17} />
                 </div>
@@ -61,7 +60,6 @@ const NavBar = () => {
                         setDarkMode(true);
                         setThemeMode(darkTheme);
                     }} 
-                    // className={`px-3 py-2 cursor-pointer rounded-r-full ${darkMode?'bg-[rgb(43,47,66)] text-white':'bg-[rgb(30,30,32)] text-black'}
                     className={`px-3 py-2 cursor-pointer rounded-r-full ${darkMode?'opacity-100':'opacity-50'} hover:opacity-20`}>
                     
                     <BsMoonStarsFill size={17} />
