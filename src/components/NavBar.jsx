@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {FaBars, FaTimes } from "react-icons/fa";
 import {BsMoonStarsFill } from "react-icons/bs";
 import {BsFillSunFill} from "react-icons/bs";
+import {motion} from "framer-motion"
 
 const links = [
     {
@@ -83,6 +84,22 @@ const NavBar = () => {
             >
                 {nav? <FaTimes />: <FaBars />}
             </div>
+            { nav && 
+            <motion.ul className={`flex flex-col absolute right-0 top-1/4 duration-600`}
+            animate={{
+                right:'50%', zIndex:100
+            }}
+            >
+            { links.map( ({id, link}) => (
+                <li 
+                    key={id}
+                    className={`${themeMode} px-5 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70`}
+                    >{link}
+                </li>
+            ))
+            }
+            </motion.ul>
+            }
 
         </div>
 
