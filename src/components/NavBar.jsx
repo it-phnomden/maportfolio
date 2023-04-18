@@ -43,7 +43,7 @@ const NavBar = () => {
     }, [darkMode] );
     return( 
     <>
-        <div className={`w-screen h-[50px] px-5 ${themeMode} flex justify-between items-center`}>
+        <div className={`w-screen h-[50px] px-5 ${themeMode} flex justify-between items-center fixed`}>
             <h1 className="font-signature font-bold text-2xl py-2 cursor-pointer transform duration-300  hover:tracking-widest">PiSeth</h1>
            
             <div className="rounded-full flex absolute top-2 left-[calc(50%-41px)] bg-[rgb(255,255,255)]  dark:bg-[rgb(43,47,66)]">

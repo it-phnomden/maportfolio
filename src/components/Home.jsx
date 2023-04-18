@@ -1,32 +1,46 @@
 import React from "react";
-import HeroImage from "./../assets/HeroImage.png"
-import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
+import HeroImage from "./../assets/HeroImage.png";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
-    return(
+  return (
     <>
-        <div className="">
+      <div name="home" className="h-screen w-full">
+        <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
+          <div className="flex flex-col text-black dark:text-white">
+            <h2 className="text-4xl md:text-6xl font-bold mb-2">
+              I am a Software Engineer
+            </h2>
+            <p>
+              I have 3 years of experience building and desgining software.
+              Currently, I love to work on web application using technologies
+              like React, Tailwind, Next JS and GraphQL.
+            </p>
             <div>
-                <h1>I'm a Full Stack Developer</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatem eum illum, 
-                    officia vel animi, veniam alias voluptatum deleniti consequuntur nesciunt iusto commodi 
-                    fugiat aut impedit, dolorum sint? Iure, obcaecati. Lorem ipsum, dolor sit amet consectetur 
-                    adipisicing elit. Explicabo, quas. Quam consequuntur velit, voluptatem saepe accusantium quaerat. 
-                    Saepe dolor pariatur, eius vitae non sequi corrupti magni, itaque in suscipit veniam?</p>
-                <div>
-                    <button>
-                        Portfolio
-                        <span>
-                            <MdOutlineKeyboardArrowRight />
-                        </span>
-                    </button>
-                </div>
+              <Link 
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              >
+                Portfolio
+                <span className="group-hover:rotate-90 duration-300">
+                  <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                </span>
+              </Link>
             </div>
-            <div>
-                <img className="w-2/3 md:w-full mx-auto rounded-2xl"
-                src={HeroImage} alt="My Profile" />
-            </div>
+          </div>
+          <div>
+            <img
+              className="md:w-2/3 mx-auto rounded-2xl"
+              src={HeroImage}
+              alt="My Profile"
+            />
+          </div>
         </div>
-    </>) 
-}
+      </div>
+    </>
+  );
+};
 export default Home;
