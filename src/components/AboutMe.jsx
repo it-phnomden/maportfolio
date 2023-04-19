@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
     return <>
-        <h1>This is aboutme page</h1>
+        <h1 className="w-full h-screen">This is about me page</h1>
     </>
 }
 export default AboutMe;

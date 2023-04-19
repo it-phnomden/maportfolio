@@ -11,7 +11,7 @@ const Home = () => {
           <div className="flex flex-col text-black dark:text-white">
             <div className="text-4xl md:text-6xl mb-2">
               <p className="text-2xl md:text-3xl">Hi, I'm <b>PiSeth</b></p>
-              <p className="font-bold">A Software Engineer</p>
+              <p className="dark:t-g font-extrabold py-1 md:py-2">A Software Engineer</p>
             </div>
             <p>
               I have 3 years of experience building and desgining core banking system using Java and Spring framework.
