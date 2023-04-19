@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'hover-hover': {
+            'raw': '(hover: hover)'
+        },
+    } },
     fontFamily: {
       signature: ["Great Vibes"],
     }
