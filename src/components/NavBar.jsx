@@ -43,7 +43,7 @@ const NavBar = () => {
     }, [darkMode] );
     return( 
     <>
-        <div className={`${themeMode} w-screen h-[60px] px-5 dark:text-white flex justify-between items-center fixed transition-colors duration-1000`}>
+        <div className={`${themeMode} w-screen h-[60px] px-5 dark:text-white flex justify-between items-center fixed transition-colors ease-in-out duration-500`}>
             
             <h1 className="font-signature font-extrabold tracking-wide text-2xl py-2 cursor-pointer transform duration-100  active:tracking-widest">PiSeth</h1>
            

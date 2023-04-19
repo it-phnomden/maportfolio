@@ -6,9 +6,9 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <>
-      <div name="home" className="h-screen w-full">
+      <div name="home" className="md:h-screen w-full">
         <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
-          <div className="flex flex-col  max-md:mt-[100px] text-black dark:text-white">
+          <div className="flex flex-col max-md:mt-[80px] text-black dark:text-white">
             <div className="text-3xl md:text-6xl mb-2">
               <p className="text-2xl md:text-3xl">Hi, I'm <b>PiSeth</b></p>
               <p className="dark:t-g font-extrabold py-1 md:py-2">A Software Engineer</p>
