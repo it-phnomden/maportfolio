@@ -9,13 +9,14 @@ const Home = () => {
       <div name="home" className="h-screen w-full">
         <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
           <div className="flex flex-col text-black dark:text-white">
-            <h2 className="text-4xl md:text-6xl font-bold mb-2">
-              I am a Software Engineer
-            </h2>
+            <div className="text-4xl md:text-6xl mb-2">
+              <p className="text-2xl md:text-3xl">Hi, I'm <b>PiSeth</b></p>
+              <p className="font-bold">A Software Engineer</p>
+            </div>
             <p>
-              I have 3 years of experience building and desgining software.
-              Currently, I love to work on web application using technologies
-              like React, Tailwind, Next JS and GraphQL.
+              I have 3 years of experience building and desgining core banking system using Java and Spring framework.
+              Currently, I love to work on web and mobile application using technologies
+              like ReactJs, TailwindCSS, NodeJs, Flutter.
             </p>
             <div>
               <Link 

@@ -46,13 +46,13 @@ const NavBar = () => {
         <div className={`w-screen h-[50px] px-5 ${themeMode} flex justify-between items-center fixed`}>
             <h1 className="font-signature font-bold text-2xl py-2 cursor-pointer transform duration-300  hover:tracking-widest">PiSeth</h1>
            
-            <div className="rounded-full flex absolute top-2 left-[calc(50%-41px)] bg-[rgb(255,255,255)]  dark:bg-[rgb(43,47,66)]">
+            <div className="rounded-full flex absolute top-1 left-[calc(50%-41px)] bg-[rgb(255,255,255)]  dark:bg-[rgb(43,47,66)]">
                 <div 
                     onClick={()=> {
                         setDarkMode(false)
                         setThemeMode(lightTheme);
                     }}
-                    className={`px-3 py-2 cursor-pointer rounded-l-full ${darkMode?'opacity-50':'opacity-100'} hover:opacity-20`}>
+                    className={`py-3 px-4 cursor-pointer rounded-l-full ${darkMode?'opacity-50':'opacity-100'} hover:opacity-20`}>
                         <BsFillSunFill size={17} />
                 </div>
                 <div 
@@ -60,7 +60,7 @@ const NavBar = () => {
                         setDarkMode(true);
                         setThemeMode(darkTheme);
                     }} 
-                    className={`px-3 py-2 cursor-pointer rounded-r-full ${darkMode?'opacity-100':'opacity-50'} hover:opacity-20`}>
+                    className={`p-3 cursor-pointer rounded-r-full ${darkMode?'opacity-100':'opacity-50'} hover:opacity-20`}>
                     
                     <BsMoonStarsFill size={17} />
                 </div>
