@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
 const App = () => {
-    return<div className="w-screen h-screen bg-white dark:bg-[rgb(13,17,23)] overflow-x-hidden">
+    return<div className="w-screenh-screen bg-white dark:bg-[rgb(13,17,23)] overflow-x-hidden">
         <NavBar />
         <Home />
         <AboutMe />
