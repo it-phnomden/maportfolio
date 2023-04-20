@@ -45,9 +45,9 @@ const NavBar = () => {
     <>
         <div className={`${themeMode} w-screen h-[60px] px-5 dark:text-white flex justify-between items-center fixed transition-colors ease-in-out duration-500`}>
             
-            <h1 className="font-signature font-extrabold text-3xl py-2 cursor-pointer transform duration-100  active:tracking-widest">PiSeth</h1>
+            <h1 className="font-signature font-extrabold text-3xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">PiSeth</h1>
            
-            <div className="rounded-full flex absolute top-[10px] left-[calc(50%-41px)] bg-[rgb(234,239,243)]  dark:bg-[rgb(43,47,66)]">
+            <div className="rounded-full flex absolute top-[10px] select-none left-[calc(50%-41px)] bg-[rgb(234,239,243)]  dark:bg-[rgb(43,47,66)]">
                 <div 
                     onClick={()=> {
                         setDarkMode(false)
