@@ -9,9 +9,9 @@ const Home = () => {
       <div name="home" className="md:h-screen w-full">
         <div className="max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row">
           <div className="flex flex-col max-md:mt-[80px] text-black dark:text-white">
-            <div className="text-3xl md:text-6xl mb-2">
+            <div className="text-4xl md:text-6xl mb-2">
               <p className="text-2xl md:text-3xl">Hi, I'm <b>PiSeth</b></p>
-              <p className="dark:t-g font-extrabold py-1 md:py-2">A Software Engineer</p>
+              <p className="dark:t-g font-extrabold tracking-tight py-1 md:py-2">A Software Engineer</p>
             </div>
             <p>
               I have 3 years of experience building and desgining core banking system using Java and Spring framework.

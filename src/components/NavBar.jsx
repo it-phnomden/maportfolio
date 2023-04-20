@@ -45,7 +45,7 @@ const NavBar = () => {
     <>
         <div className={`${themeMode} w-screen h-[60px] px-5 dark:text-white flex justify-between items-center fixed transition-colors ease-in-out duration-500`}>
             
-            <h1 className="font-signature font-extrabold tracking-wide text-2xl py-2 cursor-pointer transform duration-100  active:tracking-widest">PiSeth</h1>
+            <h1 className="font-signature font-extrabold text-3xl py-2 cursor-pointer transform duration-100  active:tracking-widest">PiSeth</h1>
            
             <div className="rounded-full flex absolute top-[10px] left-[calc(50%-41px)] bg-[rgb(234,239,243)]  dark:bg-[rgb(43,47,66)]">
                 <div 
@@ -54,7 +54,7 @@ const NavBar = () => {
                         setThemeMode(lightTheme);
                     }}
                     className={`py-[10px] px-4 cursor-pointer rounded-l-full ${darkMode?'opacity-50':'opacity-100'}`}>
-                        <BsFillSunFill size={18} />
+                        <BsFillSunFill className="active:scale-110" size={18} />
                 </div>
                 <div 
                     onClick={()=> {
@@ -63,7 +63,7 @@ const NavBar = () => {
                     }} 
                     className={`py-[10px] px-4 cursor-pointer rounded-r-full ${darkMode?'opacity-100':'opacity-50'}`}>
                     
-                    <BsMoonStarsFill size={18} />
+                    <BsMoonStarsFill className="active:scale-110" size={18} />
                 </div>
             </div>
 

@@ -4,14 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-html {
-  /* scroll-behavior: smooth; */
-}
-
 @layer base {
     html {
         font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
         @apply overflow-x-hidden;
     }
 }
