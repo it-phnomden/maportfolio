@@ -89,7 +89,7 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`bg-inherit flex flex-col absolute right-0 top-0 w-full h-screen justify-center items-center
+        className={`light-mode dark:dark-mode flex flex-col absolute right-0 top-0 w-full h-screen justify-center items-center
               z-10 transition ease-in-out duration-300 ${
                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
               }`}
