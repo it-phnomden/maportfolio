@@ -28,7 +28,7 @@ const Home = () => {
           <Link
             to="portfolio"
             smooth
-            duration={100}
+            duration={500}
             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
           >
             <span className="pl-3">Portfolio</span>

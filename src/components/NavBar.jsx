@@ -74,7 +74,7 @@ const NavBar = () => {
             key={id}
             className={`px-5 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
           >
-            <Link to={link} smooth duration={100}>
+            <Link to={link} smooth duration={500}>
               {link}
             </Link>
           </li>
@@ -99,7 +99,7 @@ const NavBar = () => {
             key={id}
             className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
           >
-            <Link to={link} onClick={() => setNav(!nav)} smooth duration={100}>
+            <Link to={link} onClick={() => setNav(!nav)} smooth duration={500}>
               {link}
             </Link>
           </li>
