@@ -8,13 +8,18 @@
     html {
         font-family: 'Poppins', sans-serif;
         scroll-behavior: smooth;
-        @apply overflow-x-hidden;
+    }
+    li {
+      @apply select-none;
     }
 }
 
 @layer components {
     .t-g {
       @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8];
+    }
+    .t-g2 {
+      @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#0f2027] to-[#2c5364];
     }
     .dark-mode {
       @apply bg-gradient-to-t from-[#2C3E50] to-[#000000] text-white;
