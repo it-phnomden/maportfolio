@@ -12,6 +12,9 @@
     li {
       @apply select-none;
     }
+    body {
+      @apply bg-slate-50 dark:bg-slate-950
+    }
 }
 
 @layer components {
