@@ -45,7 +45,7 @@ const NavBar = () => {
         PiSeth
       </h1>
 
-      <div className="rounded-full flex absolute select-none left-[calc(50%-41px)] bg-[rgb(234,239,243)]  dark:bg-[rgb(43,47,66)]">
+      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-[rgb(234,239,243)]  dark:bg-[rgb(43,47,66)]">
         <div
           onClick={() => {
             setDarkMode(false);
@@ -72,7 +72,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className={`px-5 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
+            className={`px-1 2lg:px-4 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
           >
             <Link to={link} smooth duration={500}>
               {link}

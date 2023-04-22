@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
     return(
-        <div name="contact" className="h-screen max-md:pt-[80px]">
+        <div name="contact" className="md:h-screen flex flex-col justify-center max-md:pt-[80px]">
             this contact page 
         </div>
     )
