@@ -22,7 +22,7 @@ const Home = () => {
           I have 3 years of experience building and desgining core banking
           system using Java and Spring framework. Currently, I love to work on
           web and mobile application using technologies like ReactJs,
-          TailwindCSS, NodeJs, Flutter. To know me better let's scroll down 😉
+          TailwindCSS, NodeJs, Flutter. To know me more let's scroll down 😉
         </p>
         <div>
           <Link

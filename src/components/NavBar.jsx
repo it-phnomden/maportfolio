@@ -39,9 +39,9 @@ const NavBar = () => {
   }, [darkMode]);
   return (
     <div
-      className={`bg-slate-50 dark:bg-slate-950 w-screen h-[60px] px-7 flex justify-between items-center fixed`}
+      className={`bg-slate-50 dark:bg-slate-950 w-screen h-[60px] px-3 flex justify-between items-center fixed dark:bg-opacity-95 bg-opacity-95`}
     >
-      <h1 className="font-signature font-extrabold text-3xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
+      <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
         PiSeth
       </h1>
 
@@ -89,7 +89,7 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`light-mode dark:dark-mode flex flex-col absolute right-0 top-0 w-full h-screen justify-center items-center
+        className={`bg-inherit flex flex-col absolute right-0 top-0 w-full h-screen justify-center items-center
               z-10 transition ease-in-out duration-300 ${
                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
               }`}

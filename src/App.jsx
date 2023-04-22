@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="w-screen light-mode dark:dark-mode">
       <NavBar />
-      <div className="max-w-screen-lg mx-auto px-4">
+      <div className="max-w-screen-lg mx-auto px-3">
         <Home />
         <AboutMe />
         <Portfolio />
