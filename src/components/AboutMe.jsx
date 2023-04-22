@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div name="about me" className="md:h-screen">
+    <div name="about me" className="md:h-screen max-md:pt-[80px]">
       <p className="text-4xl font-extrabold">About me</p>
       <br />
       <p className="indent-7">
