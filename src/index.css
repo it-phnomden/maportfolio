@@ -1,37 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&family=Raleway:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&family=Raleway:wght@300;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Poppins', sans-serif;
-        scroll-behavior: smooth;
-    }
-    li {
-      @apply select-none;
-    }
-    body {
-      padding: 12px;
-      padding-left: env(safe-area-inset-left);
-      padding-right: env(safe-area-inset-right);
-      @apply bg-slate-50 dark:bg-slate-950;
-    }
+  html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+  li {
+    @apply select-none;
+  }
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
+    @apply bg-slate-50 dark:bg-slate-950;
+  }
 }
 
 @layer components {
-    .t-g {
-      @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8];
-    }
-    .t-g2 {
-      @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#0f2027] to-[#2c5364];
-    }
-    .dark-mode {
-      @apply bg-gradient-to-t from-[#2C3E50] to-[#000000] text-white;
-    }
-    .light-mode {
-      @apply bg-white text-black;
-
-    }
+  .t-g {
+    @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#4ca5ff] to-[#b673f8];
   }
+  .t-g2 {
+    @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#0f2027] to-[#2c5364];
+  }
+  .dark-mode {
+    @apply bg-gradient-to-t from-[#2C3E50] to-[#000000] text-white;
+  }
+  .light-mode {
+    @apply bg-white text-black;
+  }
+}
