@@ -39,7 +39,7 @@ const NavBar = () => {
   }, [darkMode]);
   return (
     <div
-      className={`shadow-sm shadow-slate-100 w-screen dark:shadow-slate-900 h-[60px] px-3 flex justify-between items-center fixed backdrop-blur-[100px]`}
+      className={`shadow-sm shadow-slate-100 w-screen dark:shadow-slate-900 h-[60px] px-3 flex justify-between items-center fixed backdrop-blur-3xl`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
         PiSeth
