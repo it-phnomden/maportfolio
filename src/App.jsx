@@ -10,8 +10,8 @@ import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
-    AOS.init({duration:500});
-    // AOS.refresh();
+    AOS.init({duration:1000});
+    AOS.refresh();
   }, []);
   return (
     <div>
