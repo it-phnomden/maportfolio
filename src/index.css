@@ -8,15 +8,14 @@
   html {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-    padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
-  @apply light-mode dark:dark-mode;
   }
   li {
     @apply select-none;
   }
-  body {
-
+  .con {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
+    @apply light-mode dark:dark-mode;
   }
 }
 
