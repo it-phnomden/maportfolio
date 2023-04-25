@@ -8,6 +8,7 @@
   html {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
   }
   li {
     @apply select-none;
@@ -15,6 +16,7 @@
   body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right)
       env(safe-area-inset-bottom) env(safe-area-inset-left);
+    height: -webkit-fill-available;
     @apply w-full light-mode dark:dark-mode;
   }
 }
