@@ -13,9 +13,8 @@
     @apply select-none;
   }
   body {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right)
-      env(safe-area-inset-bottom) env(safe-area-inset-left);
-    @apply w-full light-mode dark:dark-mode;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    @apply light-mode dark:dark-mode;
   }
 }
 

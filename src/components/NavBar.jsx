@@ -97,8 +97,8 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`light-mode dark:dark-mode flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
-              z-100 transform ease-in-out duration-300 ${
+        className={`bg-inherit flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
+              z-100 transform ease-in-out duration-500 ${
                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
               }`}
       >

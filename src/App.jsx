@@ -19,7 +19,7 @@ const App = () => {
       <div className="max-w-screen-lg mx-auto px-3">
         <Home />
         <AboutMe />
-        <Portfolio duration="700"/>
+        <Portfolio />
         <Experience />
         <Contact />
       </div>
