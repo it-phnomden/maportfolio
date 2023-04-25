@@ -27,6 +27,8 @@ const links = [
   },
 ];
 
+
+
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
@@ -37,6 +39,12 @@ const NavBar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+
+  function openNave() {
+    setNav(!nav);
+    document.body.style.overflowY = nav?'visible':'hidden';
+  }
+
   return (
     <div
       className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed bg-opacity-95 dark:bg-opacity-95`}
@@ -83,7 +91,7 @@ const NavBar = () => {
 
       <div
         className="cursor-pointer hidden max-md:flex z-20"
-        onClick={() => setNav(!nav)}
+        onClick={openNave}
       >
         <Hamburger bgColor="bg-black dark:bg-white" isOpen={nav} />
       </div>
@@ -99,7 +107,7 @@ const NavBar = () => {
             key={id}
             className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
           >
-            <Link to={link} onClick={() => setNav(!nav)} smooth duration={500}>
+            <Link to={link} onClick={openNave} smooth duration={500}>
               {link}
             </Link>
           </li>
