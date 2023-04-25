@@ -27,8 +27,6 @@ const links = [
   },
 ];
 
-
-
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
@@ -49,7 +47,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed bg-opacity-95 dark:bg-opacity-95`}
+      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
         <Link to="home" smooth duration={500}>PiSeth</Link>
@@ -99,9 +97,9 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`light-mode dark:dark-mode flex flex-col fixed right-0 top-0 w-screen justify-center items-center
+        className={`light-mode dark:dark-mode flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
               z-100 transform ease-in-out duration-300 ${
-                nav ? "h-screen" : "h-0 overflow-hidden"
+                nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
               }`}
       >
         {links.map(({ id, link }) => (

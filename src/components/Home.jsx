@@ -8,6 +8,7 @@ const Home = () => {
     <div
       name="home"
       className="flex flex-col md:flex-row md:h-screen md:items-center max-md:pt-[80px]"
+      data-aos="zoom-in"
     >
       <div className="flex flex-col text-black dark:text-white">
         <div className="text-4xl md:text-6xl mb-2">
