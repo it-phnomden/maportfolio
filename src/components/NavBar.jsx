@@ -99,13 +99,13 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`light-mode dark:dark-mode flex flex-col absolute right-0 top-0 w-full h-screen justify-center items-center
-              z-100 transition ease-in-out duration-300 ${
-                nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
+        className={`light-mode dark:dark-mode flex flex-col fixed right-0 top-0 w-screen justify-center items-center
+              z-100 transform ease-in-out duration-300 ${
+                nav ? "h-screen" : "h-0 overflow-hidden"
               }`}
       >
         {links.map(({ id, link }) => (
-          <li
+          <li 
             key={id}
             className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
           >
