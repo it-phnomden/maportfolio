@@ -41,9 +41,10 @@ const NavBar = () => {
   }, [darkMode]);
 
   function openNave() {
+    nav?document.body.classList.add('overflow-y-hidden')
+    :document.body.classList.remove('overflow-y-hidden')
     setNav(!nav);
-    // document.body.style.overflowY = nav?'visible':'hidden';
-    document.body.classList.add(nav?'overflow-y-visible':'overflow-y-hidden');
+    
   }
 
   return (
