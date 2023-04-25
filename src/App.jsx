@@ -8,7 +8,7 @@ import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
-    <div className="w-screen light-mode dark:dark-mode">
+    <div className="w-full light-mode dark:dark-mode">
       <NavBar />
       <div className="max-w-screen-lg mx-auto px-3">
         <Home />

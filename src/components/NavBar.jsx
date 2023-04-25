@@ -39,13 +39,13 @@ const NavBar = () => {
   }, [darkMode]);
   return (
     <div
-      className={`shadow-sm shadow-slate-100 w-screen dark:shadow-slate-900 h-[60px] px-3 flex justify-between items-center fixed backdrop-blur-3xl`}
+      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed bg-opacity-95 dark:bg-opacity-95`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
-        PiSeth
+        <Link to="home" smooth duration={500}>PiSeth</Link>
       </h1>
 
-      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-100  dark:bg-slate-900">
+      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-200  dark:bg-slate-900">
         <div
           onClick={() => {
             setDarkMode(false);
