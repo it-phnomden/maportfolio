@@ -42,8 +42,8 @@ const NavBar = () => {
 
   function openNave() {
     setNav(!nav);
-    nav?document.body.classList.remove('overflow-y-hidden')
-    :document.body.classList.add('overflow-y-hidden')
+    nav?document.body.classList.remove('overflow-hidden', 'touch-none')
+    :document.body.classList.add('overflow-hidden', 'touch-none')
     
   }
 
