@@ -42,7 +42,8 @@ const NavBar = () => {
 
   function openNave() {
     setNav(!nav);
-    document.body.style.overflowY = nav?'visible':'hidden';
+    // document.body.style.overflowY = nav?'visible':'hidden';
+    document.body.classList.add(nav?'overflow-y-visible':'overflow-y-hidden');
   }
 
   return (
