@@ -47,7 +47,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed`}
+      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
         <Link to="home" smooth duration={500}>
@@ -100,9 +100,9 @@ const NavBar = () => {
 
       <ul
         className={`bg-inherit flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
-              z-100 transform ease-in-out duration-300 ${
-                nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
-              }`}
+               transform ease-in-out duration-300 ${
+                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
+               }`}
       >
         {links.map(({ id, link }) => (
           <li

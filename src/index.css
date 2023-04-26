@@ -32,13 +32,3 @@
     @apply bg-[rgb(255,255,255)] text-black;
   }
 }
-/* AOS Z-INDEX */
-[data-aos] {
-  pointer-events: none;
-}
-.aos-animate {
-  pointer-events: auto;
-}
-.aos-init[data-aos][data-aos].aos-animate {
-  transform: unset;
-}
