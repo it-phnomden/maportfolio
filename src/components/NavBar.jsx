@@ -40,9 +40,9 @@ const NavBar = () => {
 
   function openNave() {
     setNav(!nav);
-    nav?document.body.classList.remove('overflow-hidden', 'touch-none')
-    :document.body.classList.add('overflow-hidden', 'touch-none')
-    
+    nav
+      ? document.body.classList.remove("overflow-hidden", "touch-none")
+      : document.body.classList.add("overflow-hidden", "touch-none");
   }
 
   return (
@@ -50,7 +50,9 @@ const NavBar = () => {
       className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
-        <Link to="home" smooth duration={500}>PiSeth</Link>
+        <Link to="home" smooth duration={500}>
+          PiSeth
+        </Link>
       </h1>
 
       <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-200  dark:bg-slate-900">
@@ -98,12 +100,12 @@ const NavBar = () => {
 
       <ul
         className={`bg-inherit flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
-              z-100 transform ease-in-out duration-500 ${
+              z-100 transform ease-in-out duration-300 ${
                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
               }`}
       >
         {links.map(({ id, link }) => (
-          <li 
+          <li
             key={id}
             className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
           >
