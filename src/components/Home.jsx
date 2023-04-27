@@ -43,9 +43,9 @@ const Home = () => {
       </div>
       <div>
         <LazyLoadImage
-          className="md:w-2/3 mx-auto rounded-2xl"
+          className="md:w-[800px] w-screen mx-auto rounded-2xl"
           src={HeroImage}
-          Placeholder={phpiseth}
+          PlaceholderSrc={phpiseth}
           alt="My Profile"
         />
       </div>
