@@ -61,22 +61,22 @@ const NavBar = () => {
             setDarkMode(false);
             document.querySelector("meta[name='theme-color']").content = "#F8FAFC";
           }}
-          className={`py-[10px] px-4 cursor-pointer rounded-l-full ${
+          className={`py-[10px] px-4 cursor-pointer rounded-l-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-50" : "opacity-100"
           }`}
         >
-          <BsFillSunFill className="active:scale-110" size={18} />
+          <BsFillSunFill size={18} />
         </div>
         <div
           onClick={() => {
             setDarkMode(true);
             document.querySelector("meta[name='theme-color']").content = "#020617";
           }}
-          className={`py-[10px] px-4 cursor-pointer rounded-r-full ${
+          className={`py-[10px] px-4 cursor-pointer rounded-r-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-100" : "opacity-50"
           }`}
         >
-          <BsMoonStarsFill className="active:scale-110" size={18} />
+          <BsMoonStarsFill size={18} />
         </div>
       </div>
 

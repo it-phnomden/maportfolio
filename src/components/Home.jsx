@@ -2,16 +2,16 @@ import React from "react";
 import HeroImage from "./../assets/HeroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
   return (
     <div
       name="home"
       className="flex flex-col md:flex-row md:h-screen md:items-center max-md:pt-[80px]"
+      data-aos="zoom-in"
     >
-      <div className="flex flex-col text-black dark:text-white"
-      data-aos="fade-right"
-      >
+      <div className="flex flex-col text-black dark:text-white">
         <div className="text-4xl md:text-6xl mb-2">
           <p className="text-2xl md:text-3xl">
             Hi, I'm <b className="dark:t-g t-g2">PiSeth</b>
@@ -40,8 +40,8 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div data-aos="fade-left">
-        <img
+      <div>
+        <LazyLoadImage
           className="md:w-2/3 mx-auto rounded-2xl"
           src={HeroImage}
           alt="My Profile"
