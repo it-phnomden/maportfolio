@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImage from "./../assets/HeroImage.png";
+import phpiseth from "./../assets/piseth.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -44,6 +45,7 @@ const Home = () => {
         <LazyLoadImage
           className="md:w-2/3 mx-auto rounded-2xl"
           src={HeroImage}
+          Placeholder={phpiseth}
           alt="My Profile"
         />
       </div>
