@@ -59,6 +59,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setDarkMode(false);
+            document.querySelector("meta[name='theme-color']").content = "#F8FAFC";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-l-full ${
             darkMode ? "opacity-50" : "opacity-100"
@@ -69,6 +70,7 @@ const NavBar = () => {
         <div
           onClick={() => {
             setDarkMode(true);
+            document.querySelector("meta[name='theme-color']").content = "#020617";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-r-full ${
             darkMode ? "opacity-100" : "opacity-50"
