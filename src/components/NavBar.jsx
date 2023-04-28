@@ -59,7 +59,8 @@ const NavBar = () => {
         <div
           onClick={() => {
             setDarkMode(false);
-            document.querySelector("meta[name='theme-color']").content = "#F8FAFC";
+            document.querySelector("meta[name='theme-color']").content =
+              "#F8FAFC";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-l-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-50" : "opacity-100"
@@ -70,7 +71,8 @@ const NavBar = () => {
         <div
           onClick={() => {
             setDarkMode(true);
-            document.querySelector("meta[name='theme-color']").content = "#020617";
+            document.querySelector("meta[name='theme-color']").content =
+              "#020617";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-r-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-100" : "opacity-50"
@@ -82,14 +84,14 @@ const NavBar = () => {
 
       <ul className={`hidden md:flex space-x-4`}>
         {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className={`px-1 xl:px-4 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
-          >
-            <Link to={link} smooth duration={500}>
+          <Link to={link} smooth duration={500}>
+            <li
+              key={id}
+              className={`px-1 xl:px-4 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
+            >
               {link}
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
 
@@ -107,14 +109,14 @@ const NavBar = () => {
                }`}
       >
         {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
-          >
-            <Link to={link} onClick={openNave} smooth duration={500}>
+          <Link to={link} onClick={openNave} smooth duration={500}>
+            <li
+              key={id}
+              className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
+            >
               {link}
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>
