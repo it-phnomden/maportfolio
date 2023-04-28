@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="md:h-screen flex flex-col justify-center max-md:py-[80px]"
+      className="h-screen flex flex-col justify-center"
     >
       <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         this contact page Lorem ipsum dolor sit amet consectetur adipisicing
