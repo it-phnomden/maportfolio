@@ -17,7 +17,7 @@
     @apply light-mode dark:dark-mode;
   }
   a {
-    @apply active:scale-150 transform duration-300 md:hover:opacity-50 md:hover:scale-95 px-4
+    @apply active:scale-110 transform duration-300 md:hover:opacity-70 px-3 md:px-5
   }
 }
 

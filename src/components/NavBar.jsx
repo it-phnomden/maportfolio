@@ -47,7 +47,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
+      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
     >
       <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
         <Link to="home" smooth duration={500}>
@@ -55,12 +55,12 @@ const NavBar = () => {
         </Link>
       </h1>
 
-      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-200  dark:bg-slate-900">
+      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
         <div
           onClick={() => {
             setDarkMode(false);
             document.querySelector("meta[name='theme-color']").content =
-              "#F8FAFC";
+              "#E2E8F0";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-l-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-50" : "opacity-100"
@@ -72,7 +72,7 @@ const NavBar = () => {
           onClick={() => {
             setDarkMode(true);
             document.querySelector("meta[name='theme-color']").content =
-              "#020617";
+              "#161B22";
           }}
           className={`py-[10px] px-4 cursor-pointer rounded-r-full active:scale-150 transform duration-100 ${
             darkMode ? "opacity-100" : "opacity-50"

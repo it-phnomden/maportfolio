@@ -1,11 +1,10 @@
 import React from "react";
-import { BsFacebook, BsGithub, BsTelegram, BsInstagram, BsYoutube, BsSkype, BsLinkedin } from "react-icons/bs";
-import {FaFacebookMessenger} from "react-icons/fa";
+import { BsGithub, BsTelegram, BsYoutube, BsSkype, BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-50 dark:bg-slate-950 dark:text-[#A3B3BC] 
-    py-4 text-slate-00 flex flex-col md:flex-row">
+    <div className="bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC] 
+    py-4 text-slate-00 flex flex-col md:flex-row mt-[70px]">
       <div className="flex justify-center w-full max-md:pb-4">
         <a href="https://github.com/PiSethSeam" target="_blank" rel="noopener noreferrer">
           <BsGithub size={25} />
