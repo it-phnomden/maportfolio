@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex flex-col md:flex-row h-screen items-center justify-center"
+      className="flex flex-col md:flex-row md:h-screen items-center justify-center max-md:pt-[80px]"
       data-aos="zoom-in"
     >
-      <div className="flex flex-col text-black dark:text-white">
+      <div className="flex flex-col">
         <div className="text-4xl md:text-6xl mb-2">
           <p className="text-2xl md:text-3xl">
             Hi, I'm <b className="dark:t-g t-g2">PiSeth</b>
@@ -32,9 +32,9 @@ const Home = () => {
             to="portfolio"
             smooth
             duration={500}
-            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            className="group w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
           >
-            <span className="pl-3">Portfolio</span>
+            <span className="pl-3 select-none">Portfolio</span>
             <span className="group-hover:rotate-90 duration-300">
               <MdOutlineKeyboardArrowRight size={25} />
             </span>

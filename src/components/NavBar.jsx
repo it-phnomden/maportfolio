@@ -49,7 +49,7 @@ const NavBar = () => {
     <div
       className={`w-screen bg-slate-50 dark:bg-slate-950 h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
     >
-      <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100  active:tracking-widest">
+      <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
         <Link to="home" smooth duration={500}>
           PiSeth
         </Link>
@@ -87,7 +87,7 @@ const NavBar = () => {
           <Link to={link} smooth duration={500}>
             <li
               key={id}
-              className={`px-1 xl:px-4 py-2 cursor-pointer capitalize rounded-l duration-100 active:scale-110 hover:opacity-70 max-md:hover:opacity-100`}
+              className={`px-1 xl:px-4 py-2 cursor-pointer capitalize rounded-l duration-300 active:scale-110 md:hover:opacity-70`}
             >
               {link}
             </li>
@@ -104,7 +104,7 @@ const NavBar = () => {
 
       <ul
         className={`bg-inherit flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
-               transform ease-in-out duration-300 ${
+               transform ease-in-out duration-500 ${
                  nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
                }`}
       >

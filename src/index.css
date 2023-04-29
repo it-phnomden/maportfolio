@@ -16,6 +16,9 @@
   body {
     @apply light-mode dark:dark-mode;
   }
+  a {
+    @apply active:scale-150 transform duration-300 md:hover:opacity-50 md:hover:scale-95 px-4
+  }
 }
 
 @layer components {
@@ -26,7 +29,7 @@
     @apply inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#0f2027] to-[#2c5364];
   }
   .dark-mode {
-    @apply bg-[rgb(13,17,23)] text-white;
+    @apply bg-[rgb(13,17,23)] text-slate-300;
   }
   .light-mode {
     @apply bg-[rgb(255,255,255)] text-black;
