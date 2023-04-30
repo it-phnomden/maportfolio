@@ -3,6 +3,8 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import Hamburger from "./Hamberger";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import profile from "./../assets/profile.png";
 
 const links = [
   {
@@ -95,11 +97,15 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <div
-        className="cursor-pointer hidden max-md:flex z-20"
-        onClick={openNave}
-      >
-        <Hamburger bgColor="bg-black dark:bg-white" isOpen={nav} />
+      <div className="hidden max-md:flex items-center">
+        <LazyLoadImage
+          className="h-[40px]  rounded-[100%] mx-2 p-1 bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
+          src={profile}
+          alt="My Profile"
+        />
+        <div onClick={openNave}>
+          <Hamburger bgColor="bg-black dark:bg-white z-20" isOpen={nav} />
+        </div>
       </div>
 
       <ul

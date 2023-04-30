@@ -43,7 +43,7 @@ const Home = () => {
       </div>
       <div>
         <LazyLoadImage
-          className="md:w-[800px] w-screen mx-auto rounded-2xl"
+          className="md:w-[800px] w-screen mx-auto rounded-2xl dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC]"
           src={HeroImage}
           placeholderSrc={phpiseth}
           alt="My Profile"
