@@ -1,5 +1,8 @@
 import React from "react";
 import HeroImage from "./../assets/HeroImage.png";
+import pisethellise from "./../assets/pisethellise.JPG";
+import pisethalone from "./../assets/pisethalone.JPG";
+import Iellise from "./../assets/Iellise.JPEG";
 import phpiseth from "./../assets/piseth.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -32,7 +35,7 @@ const Home = () => {
             to="portfolio"
             smooth
             duration={500}
-            className="group w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            className="group w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-white"
           >
             <span className="pl-3 select-none">Portfolio</span>
             <span className="group-hover:rotate-90 duration-300">
@@ -42,10 +45,9 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <LazyLoadImage
+      <LazyLoadImage
           className="md:w-[800px] w-screen mx-auto rounded-2xl dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC]"
-          src={HeroImage}
-          placeholderSrc={phpiseth}
+          src={Iellise}
           alt="My Profile"
         />
       </div>

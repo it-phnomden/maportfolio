@@ -99,7 +99,7 @@ const NavBar = () => {
 
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
-          className="h-[40px]  rounded-[100%] mx-2 p-1 bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
+          className="h-[40px]  rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
           src={profile}
           alt="My Profile"
         />
