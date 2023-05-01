@@ -47,7 +47,7 @@ const Home = () => {
       <div>
       <LazyLoadImage
           className="md:w-[800px] w-screen mx-auto rounded-2xl dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC]"
-          src={Iellise}
+          src={pisethellise}
           alt="My Profile"
         />
       </div>
