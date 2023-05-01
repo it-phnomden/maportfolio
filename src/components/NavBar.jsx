@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
+import { RiArrowRightSFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 import Hamburger from "./Hamberger";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -49,15 +50,15 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
+      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-white h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
     >
-      <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
-        <Link to="home" smooth duration={500}>
+      <Link to="home" smooth duration={500}>
+        <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
           PiSeth
-        </Link>
-      </h1>
+        </h1>
+      </Link>
 
-      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
+      <div className="rounded-full flex max-md:absolute 2xl:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
         <div
           onClick={() => {
             setDarkMode(false);
@@ -89,7 +90,7 @@ const NavBar = () => {
           <Link to={link} smooth duration={500}>
             <li
               key={id}
-              className={`px-1 xl:px-4 py-2 cursor-pointer capitalize rounded-l duration-300 active:scale-110 md:hover:opacity-70`}
+              className={`px-1 py-2 cursor-pointer capitalize rounded-l duration-300 active:scale-110 md:hover:opacity-70`}
             >
               {link}
             </li>
@@ -99,7 +100,8 @@ const NavBar = () => {
 
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
-          className="h-[40px]  rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
+          className="h-[35px] rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400
+          animate-pulse "
           src={profile}
           alt="My Profile"
         />
