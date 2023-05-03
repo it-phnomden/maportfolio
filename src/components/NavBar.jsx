@@ -58,7 +58,7 @@ const NavBar = () => {
         </h1>
       </Link>
 
-      <div className="rounded-full flex max-md:absolute 2xl:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
+      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
         <div
           onClick={() => {
             setDarkMode(false);
@@ -85,12 +85,12 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className={`hidden md:flex space-x-4`}>
+      <ul className={`hidden md:flex space-x-4 xl:space-x-10`}>
         {links.map(({ id, link }) => (
           <Link to={link} smooth duration={500}>
             <li
               key={id}
-              className={`px-1 py-2 cursor-pointer capitalize rounded-l duration-300 active:scale-110 md:hover:opacity-70`}
+              className={`cursor-pointer capitalize duration-300 active:scale-110 md:hover:opacity-70`}
             >
               {link}
             </li>
@@ -100,8 +100,7 @@ const NavBar = () => {
 
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
-          className="h-[35px] rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400
-          animate-pulse "
+          className="h-[35px] rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
           src={profile}
           alt="My Profile"
         />
@@ -111,7 +110,7 @@ const NavBar = () => {
       </div>
 
       <ul
-        className={`bg-inherit flex flex-col fixed right-0 top-0 w-screen h-screen justify-center items-center
+        className={`bg-inherit flex flex-col space-y-10 fixed right-0 top-0 w-screen h-screen justify-center items-center
                transform ease-in-out duration-500 ${
                  nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
                }`}
@@ -120,7 +119,7 @@ const NavBar = () => {
           <Link to={link} onClick={openNave} smooth duration={500}>
             <li
               key={id}
-              className={`px-5 py-5 cursor-pointer capitalize text-2xl rounded-l duration-100 active:scale-110`}
+              className={`cursor-pointer capitalize text-2xl duration-100 active:scale-110`}
             >
               {link}
             </li>

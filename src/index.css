@@ -16,8 +16,8 @@
   body {
     @apply light-mode dark:dark-mode;
   }
-  a {
-    @apply active:scale-110 transform duration-300 md:hover:opacity-70 px-3 md:px-5
+  .social-link>a{
+    @apply mx-2 md:mx-5 md:hover:opacity-70
   }
 }
 

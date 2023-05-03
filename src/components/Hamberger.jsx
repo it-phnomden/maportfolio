@@ -5,7 +5,7 @@ const Hamburger = (props) => {
 
   return (
     <button
-      className="flex flex-col h-12 w-12 rounded justify-center items-center"
+      className="flex flex-col rounded justify-center items-center"
 
     >
       <div
