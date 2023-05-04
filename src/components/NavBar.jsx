@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import Hamburger from "./Hamberger";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import profile from "./../assets/profile.png";
+import ToggleSwitch from "./ToggleSwitch";
 
 const links = [
   {
@@ -58,31 +59,9 @@ const NavBar = () => {
         </h1>
       </Link>
 
-      <div className="rounded-full flex max-md:absolute lg:absolute select-none left-[calc(50%-41px)] bg-slate-300  dark:bg-slate-800">
-        <div
-          onClick={() => {
-            setDarkMode(false);
-            document.querySelector("meta[name='theme-color']").content =
-              "#E2E8F0";
-          }}
-          className={`py-[10px] px-4 cursor-pointer rounded-l-full active:scale-150 transform duration-100 ${
-            darkMode ? "opacity-50" : "opacity-100"
-          }`}
-        >
-          <BsFillSunFill size={18} />
-        </div>
-        <div
-          onClick={() => {
-            setDarkMode(true);
-            document.querySelector("meta[name='theme-color']").content =
-              "#161B22";
-          }}
-          className={`py-[10px] px-4 cursor-pointer rounded-r-full active:scale-150 transform duration-100 ${
-            darkMode ? "opacity-100" : "opacity-50"
-          }`}
-        >
-          <BsMoonStarsFill size={18} />
-        </div>
+      <div className="max-md:absolute lg:absolute select-none left-[calc(50%-41px)]"
+      onClick={()=> setDarkMode(!darkMode)}>
+        <ToggleSwitch dark={darkMode} />
       </div>
 
       <ul className={`hidden md:flex space-x-4 xl:space-x-10`}>
