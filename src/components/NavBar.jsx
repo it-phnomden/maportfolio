@@ -100,7 +100,8 @@ const NavBar = () => {
 
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
-          className="h-[35px] rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
+          className="h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
+          border-[2px] dark:border-slate-500 border-slate-400 animate-pulse"
           src={profile}
           alt="My Profile"
         />
