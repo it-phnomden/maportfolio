@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div
       className="h-[100px] md:h-[50px] bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC] 
-    text-slate-00 flex flex-col md:flex-row justify-evenly md:justify-between items-center"
+    text-slate-00 flex flex-col md:flex-row justify-evenly items-center"
     >
       <div className="flex social-link">
         <a
@@ -50,7 +50,7 @@ const Footer = () => {
           <BsLinkedin size={25} />
         </a>
       </div>
-      <p class="md:mr-5">
+      <p class="md:mr-5 text-center">
         Copyright © 2023 <b>PiSeth</b> | All Rights Reserved
       </p>
     </div>

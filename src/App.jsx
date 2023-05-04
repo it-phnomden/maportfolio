@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <div className="max-w-screen-lg mx-auto px-3">
+      <div className="max-w-screen-lg mx-auto px-5">
         <Home />
         <AboutMe />
         <Portfolio />

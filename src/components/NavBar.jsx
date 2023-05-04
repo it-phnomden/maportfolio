@@ -50,7 +50,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-white h-[60px] px-3 md:px-7 flex justify-between items-center fixed z-10`}
+      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-white h-[60px] px-5 md:px-7 flex justify-between items-center fixed z-10`}
     >
       <Link to="home" smooth duration={500}>
         <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
@@ -100,7 +100,7 @@ const NavBar = () => {
 
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
-          className="h-[35px] rounded-[100%] mx-2 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
+          className="h-[35px] rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 border-[2px] dark:border-slate-500 border-slate-400"
           src={profile}
           alt="My Profile"
         />
