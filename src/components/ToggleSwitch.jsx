@@ -1,20 +1,17 @@
 import React from "react";
 import { FaRegSun } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { MdWbSunny } from "react-icons/md";
 
 const ToggleSwitch = (props) => {
   return (
-    <div
-      className="bg-slate-300  dark:bg-slate-700 w-[100px] p-[3px] rounded-full flex justify-between items-center cursor-pointer"
-    >
+    <div className="bg-slate-300  dark:bg-slate-700 w-[105px] p-3 rounded-full flex justify-between items-center cursor-pointer">
       <div
-        className={`bg-slate-400 dark:bg-slate-800 relative w-fit p-4 flex justify-center items-center rounded-full
-        transform duration-500 ${props.dark?'translate-x-[63px] rotate-[360deg]':'translate-x-0'}`}
-      >
-        <FaRegSun size={18} className={`absolute ${props.dark?'opacity-0':'opacity-100'}`} />    
-        <BsFillMoonStarsFill size={18} className={`absolute ${props.dark?'opacity-100':'opacity-0'}`}/>
-        
-      </div>
+        className={`w-fit p-5 flex justify-center items-center rounded-full
+        duration-300 transition-transform ease-linear absolute left-1 ${props.dark ? "bg-slate-800 translate-x-14" : "bg-slate-200 translate-x-0"}`}
+      ></div>
+      <FaRegSun size={25} className="z-10" />
+      <BsFillMoonStarsFill size={25} className="z-10" />
     </div>
   );
 };
