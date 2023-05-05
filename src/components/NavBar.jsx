@@ -80,18 +80,18 @@ const NavBar = () => {
       <div className="hidden max-md:flex items-center">
         <LazyLoadImage
           className="h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
-          border-[2px] dark:border-slate-500 border-slate-400 animate-pulse"
+          border-[2px] dark:border-slate-500 border-slate-400"
           src={profile}
           alt="My Profile"
         />
         <div onClick={openNave}>
-          <Hamburger bgColor="bg-black dark:bg-white z-20" isOpen={nav} />
+          <Hamburger bgColor="bg-black dark:bg-white z-30" isOpen={nav} />
         </div>
       </div>
 
       <ul
         className={`bg-inherit flex flex-col space-y-10 fixed right-0 top-0 w-screen h-screen justify-center items-center
-               transform ease-in-out duration-500 ${
+               transform ease-in-out duration-500 z-20 ${
                  nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
                }`}
       >
