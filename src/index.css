@@ -17,7 +17,7 @@
     @apply light-mode dark:dark-mode;
   }
   .social-link>a{
-    @apply mx-2 md:mx-3 md:hover:opacity-70
+    @apply mx-3 md:mx-5 md:hover:opacity-70
   }
 }
 
