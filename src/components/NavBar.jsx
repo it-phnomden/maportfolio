@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { BsMoonStarsFill } from "react-icons/bs";
-import { BsFillSunFill } from "react-icons/bs";
-import { RiArrowRightSFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 import Hamburger from "./Hamberger";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import profile from "./../assets/profile.png";
-import ToggleSwitch from "./ToggleSwitch";
+import { FaSun } from "react-icons/fa";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const links = [
   {
@@ -59,9 +57,33 @@ const NavBar = () => {
         </h1>
       </Link>
 
-      <div className="max-md:absolute lg:absolute select-none left-[calc(50%-41px)]"
-      onClick={()=> setDarkMode(!darkMode)}>
-        <ToggleSwitch dark={darkMode} />
+      <div className="max-md:absolute lg:absolute select-none left-[calc(50%-41px)]">
+        <div className="relative w-20 bg-slate-300 dark:bg-slate-800 p-2 rounded-full flex justify-between items-center cursor-pointer">
+          <FaSun
+            size={20}
+            className="z-10"
+            onClick={() => {
+              document.querySelector("meta[name='theme-color']").content =
+                "#E2E8F0";
+              setDarkMode(false);
+            }}
+          />
+          <BsFillMoonStarsFill
+            size={20}
+            className="z-10"
+            onClick={() => {
+              document.querySelector("meta[name='theme-color']").content =
+                "#161B22";
+              setDarkMode(true);
+            }}
+          />
+          <div
+            className={`bg-slate-200 dark:bg-[#161B22] p-4 flex justify-center items-center rounded-full
+        transform-gpu transition-transform duration-300 ease-in absolute left-[2px] ${
+          darkMode ? "translate-x-[44px]" : ""
+        }`}
+          ></div>
+        </div>
       </div>
 
       <ul className={`hidden md:flex space-x-4 xl:space-x-10`}>
