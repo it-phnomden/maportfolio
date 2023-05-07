@@ -24,7 +24,7 @@ const Home = () => {
             A Software Engineer
           </p>
         </div>
-        <p>
+        <p className="md:pr-1">
           I have 3 years of experience building and desgining core banking
           system using Java and Spring framework. Currently, I love to work on
           web and mobile application using technologies like ReactJs,
@@ -47,7 +47,7 @@ const Home = () => {
       <div>
       <LazyLoadImage
           className="md:w-[800px] w-screen mx-auto rounded-2xl dark:bg-[rgb(22,27,34)] dark:text-[#A3B3BC]"
-          src={pisethellise}
+          src={HeroImage}
           alt="My Profile"
         />
       </div>
