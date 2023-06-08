@@ -23,7 +23,7 @@
     @apply flex flex-col w-fit max-md:w-full max-md:items-center
   }
   #form > input, textarea {
-    @apply m-2 rounded-lg w-[450px] p-3 outline-none text-black 
+    @apply m-2 rounded-lg w-[450px] p-3 outline-none text-black max-md:w-[100%]
   }
   #form > button {
     @apply w-32 rounded-full p-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white mx-auto
