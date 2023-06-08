@@ -7,15 +7,18 @@ const Contact = () => {
       className="md:h-screen flex flex-col justify-center max-md:py-[70px]"
     >
       <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        this contact page Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Tenetur, necessitatibus est? Ea ex cum magni dolore placeat iste
-        aut ipsam, in consectetur ullam harum ratione voluptate, odio
-        accusantium doloremque nam!Lorem Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Impedit eum adipisci voluptate sequi earum voluptatum
-        dolores minus obcaecati eius veniam? Sunt ad quasi hic accusantium. Hic,
-        ipsum. Officia, voluptates doloribus? Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Eveniet nobis voluptate amet animi unde
-        tempore perspiciatis modi, adipisci corrupti repellendus sequi esse! Eum
+        <p className="text-xl font-extrabold w-fit border-b-2 mb-2">Contact</p>
+        <form action="https://getform.io/f/d7c637a8-6b7a-4c65-8762-1d04d4bf56c6" method="POST"
+          id="form"
+          autocomplete="off"
+        >
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <textarea name="message" placeholder="Message me"
+            className="h-60 "
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   );

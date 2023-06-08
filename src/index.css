@@ -19,6 +19,15 @@
   .social-link>a{
     @apply mx-3 md:mx-5 md:hover:opacity-70
   }
+  #form {
+    @apply flex flex-col w-fit max-md:w-full max-md:items-center
+  }
+  #form > input, textarea {
+    @apply m-2 rounded-lg w-[450px] p-3 outline-none text-black 
+  }
+  #form > button {
+    @apply w-32 rounded-full p-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white mx-auto
+  }
 }
 
 @layer components {
