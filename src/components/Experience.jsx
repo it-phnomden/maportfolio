@@ -26,17 +26,17 @@ const skills = [
   }, {
     id: 3,
     src: js,
-    title: "Javascript",
+    title: "JsScript",
     style: "shadow-[#FFD600]"
   }, {
     id: 4,
     src: tailwind,
-    title: "TailWindCSS",
+    title: "TailWind",
     style: "shadow-[#44A8B3]"
   }, {
     id: 5,
     src: react,
-    title: "ReactJS",
+    title: "ReactJ",
     style: "shadow-[#00D7FE]"
   }, {
     id: 6,
@@ -61,7 +61,7 @@ const skills = [
   }, {
     id: 10,
     src: springboot,
-    title: "Spring-Boot",
+    title: "Spring",
     style: "shadow-[#8BC34A]"
   }, {
     id: 11,
@@ -85,13 +85,13 @@ const Experience = () => {
       <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">Experience</p>
         <p>These are the technologies that I have worked with.</p>
-        <div className="w-full my-5 grid grid-cols-2 sm:grid-cols-4 gap-8">
+        <div className="w-full my-5 grid grid-cols-3 sm:grid-cols-4 gap-8 max-sm:gap-4">
           {
             skills.map(({id, src, title, style}) => (
               <div 
               key={id}
-              className={`w-52 flex flex-col items-center shadow-md ${style}`}>
-                <img src={src} alt="html.png" className="w-20" />
+              className={` flex flex-col items-center shadow-md ${style}`}>
+                <img src={src} alt="html.png" className="w-[40%]" />
                 <p className="text-lg">{title}</p>
               </div>
 
