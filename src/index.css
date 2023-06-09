@@ -27,7 +27,7 @@
     bg-[#F4F6F8] dark:bg-[#282C34] dark:text-white
   }
   #form > button {
-    @apply w-32 rounded-full p-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white mx-auto
+    @apply w-32 my-1 rounded-full p-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white mx-auto
   }
 }
 
