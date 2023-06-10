@@ -36,7 +36,7 @@ const skills = [
   }, {
     id: 5,
     src: react,
-    title: "ReactJ",
+    title: "ReactJS",
     style: "shadow-[#00D7FE]"
   }, {
     id: 6,
