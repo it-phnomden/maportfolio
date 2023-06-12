@@ -13,7 +13,7 @@ const Home = () => {
     <div
       name="home"
       className="flex flex-col md:flex-row h-screen items-center justify-center max-md:pt-[80px]"
-      data-aos="zoom-in" data-aos-delay="500"
+      data-aos="zoom-in" data-aos-delay="1000"
     >
       <div className="flex flex-col">
         <div className="text-4xl md:text-6xl mb-2">
