@@ -6,7 +6,7 @@ const AboutMe = () => {
       name="about me"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom">
+      <div data-aos="zoom-in-up">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">About Me</p>
         <p className="indent-7">
           Hi there! I'm a software engineer with three years of experience in
