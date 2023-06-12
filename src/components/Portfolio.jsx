@@ -28,7 +28,7 @@ const Portfolio = () => {
       name="portfolio"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="fade-left">
+      <div data-aos="fade-up">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">
           Portfolio
         </p>
