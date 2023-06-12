@@ -1,5 +1,6 @@
 import React from "react";
 import calculator from "../assets/portfolio/calculator.png";
+import portfolio from "../assets/portfolio/portfolio.png";
 
 const projects = [
   {
@@ -9,19 +10,9 @@ const projects = [
     sourceLink: 'https://github.com/PiSethSeam/easy-calculate'
   }, {
     id: 2,
-    imgSrc: calculator,
-    demoLink: 'https://pisethseam.github.io/easy-calculate/',
-    sourceLink: 'https://github.com/PiSethSeam/easy-calculate'
-  }, {
-    id: 3,
-    imgSrc: calculator,
-    demoLink: 'https://pisethseam.github.io/easy-calculate/',
-    sourceLink: 'https://github.com/PiSethSeam/easy-calculate'
-  }, {
-    id: 4,
-    imgSrc: calculator,
-    demoLink: 'https://pisethseam.github.io/easy-calculate/',
-    sourceLink: 'https://github.com/PiSethSeam/easy-calculate'
+    imgSrc: portfolio,
+    demoLink: 'https://pisethseam.github.io/maportfolio/',
+    sourceLink: 'https://github.com/PiSethSeam/maportfolio'
   }
 ]
 
@@ -48,8 +39,8 @@ const Portfolio = () => {
               >
                 <img src={imgSrc} alt="Calculator.png" />
                 <div className="flex justify-evenly" id="check-out">
-                  <a href={demoLink}>Demo</a>
-                  <a href={sourceLink}>Code</a>
+                  <a href={demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
+                  <a href={sourceLink} target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </div>
 
