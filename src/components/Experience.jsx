@@ -90,7 +90,7 @@ const Experience = () => {
             skills.map(({id, src, title, style}) => (
               <div 
               key={id}
-              className={`flex flex-col max-sm:w-[35%] w-[17%] p-10 
+              className={`flex flex-col max-sm:w-[40%] max-sm:h-[35%] w-[22%] max-sm:p-8 p-10
                mt-5 rounded-2xl items-center shadow-md ${style}`}>
                 <img src={src} alt="html.png"/>
                 <p>{title}</p>
