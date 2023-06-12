@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
-    AOS.init({duration:1200,offset: 200,anchorPlacement: 'top-bottom'});
+    AOS.init({duration:1000,offset: 200,anchorPlacement: 'top-bottom'});
     AOS.refresh();
   }, []);
   return (

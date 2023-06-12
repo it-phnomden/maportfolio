@@ -82,16 +82,16 @@ const Experience = () => {
       name="experience"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="zoom-in-up">
+      <div data-aos="flip-up">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">Experience</p>
-        <p className="indent-7">These are the technologies that I have worked with.</p>
-        <div className="w-full flex justify-evenly flex-wrap">
+        <p className="indent-7 mb-5">These are the technologies that I have worked with.</p>
+        <div className="flex flex-wrap justify-evenly max-sm:justify-between">
           {
             skills.map(({id, src, title, style}) => (
               <div 
               key={id}
-              className={`flex flex-col w-[200px] p-7 max-sm:w-[130px] max-sm:p-5 space-y-2
-               mt-5 rounded-2xl items-center shadow-md ${style}`}>
+              className={`flex flex-col items-center space-y-3 max-sm:w-[30%] w-[15%] max-sm:px-8 px-10 py-5
+              rounded-2xl max-sm:mb-5 mb-3 bg-[#F4F6F8] dark:bg-[#161B22] ${style} shadow-sm`}>
                 <img src={src} alt="html.png"/>
                 <p>{title}</p>
               </div>

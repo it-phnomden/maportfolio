@@ -28,7 +28,7 @@ const Portfolio = () => {
       name="portfolio"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="zoom-in-up">
+      <div data-aos="fade-left">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">
           Portfolio
         </p>
@@ -45,7 +45,7 @@ const Portfolio = () => {
               >
                 <img src={imgSrc} alt="Calculator.png" />
                 <div className="flex justify-evenly" id="check-out">
-                  <a href={demoLink} target="_blank" rel="noopener noreferrer">Demo</a>
+                  <a href={demoLink} target="_blank" rel="noopener noreferrer">Live</a>
                   <a href={sourceLink} target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </div>
