@@ -1,6 +1,7 @@
 import React from "react";
 import calculator from "../assets/portfolio/calculator.png";
 import portfolio from "../assets/portfolio/portfolio.png";
+import khlakhlouk from "../assets/portfolio/khlakhlouk.png";
 
 const projects = [
   {
@@ -11,6 +12,11 @@ const projects = [
   }, {
     id: 2,
     imgSrc: portfolio,
+    demoLink: 'https://pisethseam.github.io/maportfolio/',
+    sourceLink: 'https://github.com/PiSethSeam/maportfolio'
+  }, {
+    id: 2,
+    imgSrc: khlakhlouk,
     demoLink: 'https://pisethseam.github.io/maportfolio/',
     sourceLink: 'https://github.com/PiSethSeam/maportfolio'
   }

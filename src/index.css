@@ -30,7 +30,7 @@
     @apply w-32 my-1 rounded-full p-3 btn-primary text-white mx-auto
   }
   #check-out>a{
-    @apply mt-3 font-extrabold active:scale-125 duration-100
+    @apply mt-3 active:scale-125 duration-100
   }
 }
 
