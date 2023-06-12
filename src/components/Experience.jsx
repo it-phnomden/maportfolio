@@ -82,7 +82,7 @@ const Experience = () => {
       name="experience"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      <div data-aos="zoom-in-up">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">Experience</p>
         <p className="indent-7">These are the technologies that I have worked with.</p>
         <div className="w-full my-5 grid grid-cols-3 sm:grid-cols-4 gap-8 max-sm:gap-4">

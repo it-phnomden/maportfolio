@@ -13,7 +13,7 @@ const Home = () => {
     <div
       name="home"
       className="flex flex-col md:flex-row md:h-screen items-center justify-center max-md:pt-[80px]"
-      data-aos="zoom-in"
+      data-aos="zoom-in" data-aos-delay="500"
     >
       <div className="flex flex-col">
         <div className="text-4xl md:text-6xl mb-2">
@@ -35,7 +35,7 @@ const Home = () => {
             to="portfolio"
             smooth
             duration={500}
-            className="group w-fit px-6 py-3 my-2 flex items-center rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-white"
+            className="group w-fit px-6 py-3 my-2 flex items-center rounded-full btn-primary cursor-pointer text-white"
           >
             <span className="pl-3 select-none">Portfolio</span>
             <span className="group-hover:rotate-90 duration-300">
