@@ -54,7 +54,7 @@ const Portfolio = () => {
           Here are some projects that have done before. If you want to see
           the source code and how it works you can check them out below.
         </p>
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-7">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
           {
             projects.map(({ id, imgSrc, demoLink, sourceLink }) => (
               <div key={id}
