@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="flex flex-col md:flex-row h-screen items-center justify-center max-md:pt-[80px]"
+      className="flex flex-col md:flex-row md:h-screen items-center justify-center max-md:pt-[80px]"
       data-aos="zoom-in" data-aos-delay="1000"
     >
       <div className="flex flex-col">
