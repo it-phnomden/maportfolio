@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/maportfolio/static/css/main.4f6908da.css",
-    "main.js": "/maportfolio/static/js/main.6e2ead82.js",
+    "main.css": "/maportfolio/static/css/main.5a7c20bf.css",
+    "main.js": "/maportfolio/static/js/main.6f654067.js",
     "static/media/Iellise.JPEG": "/maportfolio/static/media/Iellise.a349d0821098ba87d25d.JPEG",
     "static/media/HeroImage.png": "/maportfolio/static/media/HeroImage.1d9b958283e4f1ceca3c.png",
     "static/media/pisethalone.JPG": "/maportfolio/static/media/pisethalone.4d102b3b79b5c6abf93c.JPG",
     "static/media/pisethellise.JPG": "/maportfolio/static/media/pisethellise.c745fc3c366d547b09d0.JPG",
+    "static/media/music.png": "/maportfolio/static/media/music.1de1f17efacf7d2b7bd7.png",
+    "static/media/dictionary.png": "/maportfolio/static/media/dictionary.d8faa18a6fad09f970c9.png",
     "static/media/khlakhlouk.png": "/maportfolio/static/media/khlakhlouk.4d79e9442d17724ca487.png",
     "static/media/portfolio.png": "/maportfolio/static/media/portfolio.267b4821e402acae29d9.png",
     "static/media/piseth.png": "/maportfolio/static/media/piseth.3775d2659d44c22c5350.png",
+    "static/media/horoscope.png": "/maportfolio/static/media/horoscope.d3f82127a9acfd97a7c8.png",
     "static/media/calculator.png": "/maportfolio/static/media/calculator.70c2b385e6c03067bbd4.png",
     "static/media/react.png": "/maportfolio/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/maportfolio/static/media/node.952a9ea986dcfa5229ad.png",
@@ -23,11 +26,11 @@
     "static/media/csharp.png": "/maportfolio/static/media/csharp.18944fc4c5b536e639f8.png",
     "static/media/javascript.png": "/maportfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/maportfolio/index.html",
-    "main.4f6908da.css.map": "/maportfolio/static/css/main.4f6908da.css.map",
-    "main.6e2ead82.js.map": "/maportfolio/static/js/main.6e2ead82.js.map"
+    "main.5a7c20bf.css.map": "/maportfolio/static/css/main.5a7c20bf.css.map",
+    "main.6f654067.js.map": "/maportfolio/static/js/main.6f654067.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6908da.css",
-    "static/js/main.6e2ead82.js"
+    "static/css/main.5a7c20bf.css",
+    "static/js/main.6f654067.js"
   ]
 }
