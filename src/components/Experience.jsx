@@ -85,15 +85,14 @@ const Experience = () => {
       <div data-aos="zoom-in">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">Experience</p>
         <p className="indent-7 mb-5">These are the technologies that I have worked with.</p>
-        <div className="flex flex-wrap justify-evenly max-sm:justify-between">
+        <div className="grid grid-cols-3 gap-4 md:grid-cols-7">
           {
             skills.map(({id, src, title, style}) => (
               <div 
               key={id}
-              className={`flex flex-col items-center space-y-3 max-sm:w-[30%] w-[15%] max-sm:px-8 px-10 py-5
-              rounded-2xl max-sm:mb-5 mb-3 bg-[#F4F6F8] dark:bg-[#161B22] ${style} shadow-sm`}>
+              className={`bg-[#F4F6F8] dark:bg-[#161B22] ${style} shadow-inner rounded-2xl p-5 text-center`}>
                 <img src={src} alt="html.png"/>
-                <p>{title}</p>
+                <p className="mt-2">{title}</p>
               </div>
             ))
           }
