@@ -6,7 +6,7 @@ const AboutMe = () => {
       name="about me"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"
+      <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
       data-aos-offset="0">
         <p className="text-xl font-extrabold w-fit border-b-2 mb-2">About Me</p>
         <p className="indent-7">
