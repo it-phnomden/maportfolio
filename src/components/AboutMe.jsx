@@ -19,7 +19,7 @@ const AboutMe = () => {
           developing and maintaining software applications. I have experience in
           designing and implementing software solutions for various clients and
           projects. I'm proficient in programming languages such as Java, C#,
-          PHP, Dart, Swift Tyepscript and Javascript. I graduated from Royal University of Phnom Penh
+          PHP, Dart, Swift, Tyepscript and Javascript. I graduated from Royal University of Phnom Penh
           with a degree in Computer Science and have been working as a Software
           Engineer at Mobile C&C Cambodia Company since June 2020.
         </p>
