@@ -1,5 +1,5 @@
 import React from "react";
-import {IoIosContact} from "react-icons/io"
+import { IoIosContact } from "react-icons/io"
 
 const AboutMe = () => {
   return (
@@ -8,15 +8,14 @@ const AboutMe = () => {
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
       <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-        data-aos-offset="0">
-        <div className="flex items-center space-x-2 rounded-lg mb-2 py-3 px-1 bg-[#F4F6F8] dark:bg-[#161B22]">
-          <IoIosContact size={30} />
+        data-aos-offset="0"
+        className="bg-[#F4F6F8] dark:bg-[#161B22] p-4 rounded-2xl">
+        <div className="flex items-center rounded-2xl py-3 bg-[#e9ecf3] dark:bg-[#1f252c] ">
+          <IoIosContact size={30} className="mx-3" />
           <p className="text-xl font-extrabold w-fit ">About Me</p>
         </div>
-
-
-        <p className="indent-7">
-          Hi there! I'm a software engineer with three years of experience in
+        <p className="text-lg indent-7 p-3 pb-0">
+          I'm a software engineer with three years of experience in
           developing and maintaining software applications. I have experience in
           designing and implementing software solutions for various clients and
           projects. I'm proficient in programming languages such as Java,

@@ -24,7 +24,7 @@ const Home = () => {
             A Software Engineer
           </p>
         </div>
-        <p className="md:pr-7 indent-7">
+        <p className="md:pr-7 indent-7 text-lg">
           I have 3 years of experience building and desgining core banking
           system using Java and Spring framework. Currently, I love to work on
           web and mobile application using technologies like ReactJs,

@@ -5,6 +5,7 @@ import khlakhlouk from "../assets/portfolio/khlakhlouk.png";
 import dictionary from "../assets/portfolio/dictionary.png";
 import music from "../assets/portfolio/music.png";
 import horoscope from "../assets/portfolio/horoscope.png";
+import { MdPermContactCalendar } from "react-icons/md"
 
 const projects = [
   {
@@ -46,15 +47,21 @@ const Portfolio = () => {
       name="portfolio"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
-      <div data-aos="fade-up">
-        <p className="text-xl font-extrabold w-fit border-b-2 mb-2">
-          Portfolio
-        </p>
-        <p className="indent-7 mb-5">
-          Here are some projects that have done before. If you want to see
-          the source code and how it works you can check them out below.
-        </p>
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+      <div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+          data-aos-offset="0"
+          className="bg-[#F4F6F8] dark:bg-[#161B22] p-4 rounded-t-2xl mb-3">
+          <div className="flex items-center rounded-2xl py-3 bg-[#e9ecf3] dark:bg-[#1f252c] ">
+            <MdPermContactCalendar size={30} className="mx-3" />
+            <p className="text-xl font-extrabold w-fit ">Portfolio</p>
+          </div>
+          <p className="text-lg indent-7 p-3 pb-0">
+            Here are some projects that have done before. If you want to see
+            the source code and how it works you can check them out below.
+          </p>
+        </div>
+        <div data-aos="fade-up"
+          className="grid grid-cols-2 gap-3 md:grid-cols-5">
           {
             projects.map(({ id, imgSrc, demoLink, sourceLink }) => (
               <div key={id}
