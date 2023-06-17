@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/maportfolio/static/css/main.5fd1f8db.css",
-    "main.js": "/maportfolio/static/js/main.9516e5e5.js",
+    "main.css": "/maportfolio/static/css/main.622ca738.css",
+    "main.js": "/maportfolio/static/js/main.3f4a64f8.js",
     "static/media/Iellise.JPEG": "/maportfolio/static/media/Iellise.a349d0821098ba87d25d.JPEG",
     "static/media/HeroImage.png": "/maportfolio/static/media/HeroImage.1d9b958283e4f1ceca3c.png",
     "static/media/pisethalone.JPG": "/maportfolio/static/media/pisethalone.4d102b3b79b5c6abf93c.JPG",
@@ -14,6 +14,7 @@
     "static/media/horoscope.png": "/maportfolio/static/media/horoscope.d3f82127a9acfd97a7c8.png",
     "static/media/calculator.png": "/maportfolio/static/media/calculator.70c2b385e6c03067bbd4.png",
     "static/media/react.png": "/maportfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/cv.png": "/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png",
     "static/media/node.png": "/maportfolio/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/profile.png": "/maportfolio/static/media/profile.71ab2f04c9052da6949d.png",
     "static/media/java.png": "/maportfolio/static/media/java.28cb3b091b37081b55d4.png",
@@ -26,11 +27,11 @@
     "static/media/csharp.png": "/maportfolio/static/media/csharp.18944fc4c5b536e639f8.png",
     "static/media/javascript.png": "/maportfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/maportfolio/index.html",
-    "main.5fd1f8db.css.map": "/maportfolio/static/css/main.5fd1f8db.css.map",
-    "main.9516e5e5.js.map": "/maportfolio/static/js/main.9516e5e5.js.map"
+    "main.622ca738.css.map": "/maportfolio/static/css/main.622ca738.css.map",
+    "main.3f4a64f8.js.map": "/maportfolio/static/js/main.3f4a64f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fd1f8db.css",
-    "static/js/main.9516e5e5.js"
+    "static/css/main.622ca738.css",
+    "static/js/main.3f4a64f8.js"
   ]
 }
