@@ -113,7 +113,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <ul className={`hidden md:flex space-x-4 xl:space-x-10`}>
+      <ul className={`hidden md:flex space-x-4 xl:space-x-10 md:mr-10`}>
         {links.map(({ id, link }) => (
           <Link to={link} smooth duration={500}>
             <li
