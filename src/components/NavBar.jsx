@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Hamburger from "./Hamberger";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import profile from "./../assets/profile.png";
+import cv from "./../assets/cv.png";
 import { FaSun } from "react-icons/fa";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
@@ -32,6 +33,7 @@ const links = [
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const [currentImg, setCurrentImg] = useState(profile);
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -39,6 +41,17 @@ const NavBar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
+
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (currentImg === '/maportfolio/static/media/profile.71ab2f04c9052da6949d.png')
+        setCurrentImg(cv)
+      else setCurrentImg(profile)
+    }, 3000)
+
+    return () => clearInterval(intervalId);
+  }, [currentImg])
 
   function openNave() {
     setNav(!nav);
@@ -56,7 +69,18 @@ const NavBar = () => {
           PiSeth
         </h1>
       </Link>
-
+      <a href="https://www.figma.com/file/z1s6F1bjErTmMv7s9jzT1S/PiSeth-Seam?type=design&node-id=0-1&t=08YHlUC7NI5ILpjq-0"
+        target="_blank" rel="noopener noreferrer"
+        className="max-md:hidden absolute left-24 active:scale-150 transform duration-300"
+      >
+        <LazyLoadImage
+          className={`"h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
+          border-[2px] dark:border-slate-500 border-slate-400
+          ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}
+          src={currentImg}
+          alt="My Profile"
+        />
+      </a>
       <div className="max-md:absolute lg:absolute select-none left-[calc(50%-41px)]">
         <div className="relative w-20 bg-slate-300 dark:bg-slate-800 group rounded-full flex items-center cursor-pointer">
           <div
@@ -82,9 +106,8 @@ const NavBar = () => {
           </div>
           <div
             className={`bg-slate-200 dark:bg-[#171d25] p-4 rounded-full shadow-inner
-           transform-gpu transition-transform duration-300 ease-in-out absolute left-[2px] ${
-            darkMode ? "translate-x-[44px] shadow-[#fcfcfc33]" : ""
-          }`}
+           transform-gpu transition-transform duration-300 ease-in-out absolute left-[2px] ${darkMode ? "translate-x-[44px] shadow-[#fcfcfc33]" : ""
+              }`}
           ></div>
         </div>
       </div>
@@ -103,12 +126,17 @@ const NavBar = () => {
       </ul>
 
       <div className="hidden max-md:flex items-center">
-        <LazyLoadImage
-          className="h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
-          border-[2px] dark:border-slate-500 border-slate-400"
-          src={profile}
-          alt="My Profile"
-        />
+        <a href="https://www.figma.com/file/z1s6F1bjErTmMv7s9jzT1S/PiSeth-Seam?type=design&node-id=0-1&t=08YHlUC7NI5ILpjq-0"
+          target="_blank" rel="noopener noreferrer"
+          className="active:scale-150 transform duration-300">
+          <LazyLoadImage
+            className={`"h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
+          border-[2px] dark:border-slate-500 border-slate-400
+          ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}
+            src={currentImg}
+            alt="My Profile"
+          />
+        </a>
         <div onClick={openNave}>
           <Hamburger bgColor="bg-black dark:bg-white z-30" isOpen={nav} />
         </div>
@@ -116,9 +144,8 @@ const NavBar = () => {
 
       <ul
         className={`bg-inherit flex flex-col space-y-10 fixed right-0 top-0 w-screen h-screen justify-center items-center
-               transform ease-in-out duration-500 z-20 ${
-                 nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
-               }`}
+               transform ease-in-out duration-500 z-20 ${nav ? "translate-y-[0vh]" : "-translate-y-[100vh]"
+          }`}
       >
         {links.map(({ id, link }) => (
           <Link to={link} onClick={openNave} smooth duration={500}>

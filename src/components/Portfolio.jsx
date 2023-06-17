@@ -48,8 +48,7 @@ const Portfolio = () => {
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
       <div>
-        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-          data-aos-offset="0"
+        <div data-aos="fade-up"
           className="bg-[#F4F6F8] dark:bg-[#161B22] p-4 rounded-t-2xl mb-3">
           <div className="flex items-center rounded-2xl py-3 bg-[#e9ecf3] dark:bg-[#1f252c] ">
             <MdPermContactCalendar size={30} className="mx-3" />
@@ -60,7 +59,7 @@ const Portfolio = () => {
             the source code and how it works you can check them out below.
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div data-aos="fade-up" data-aos-offset="100"
           className="grid grid-cols-2 gap-3 md:grid-cols-5">
           {
             projects.map(({ id, imgSrc, demoLink, sourceLink }) => (
