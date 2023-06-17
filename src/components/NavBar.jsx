@@ -71,12 +71,13 @@ const NavBar = () => {
       </Link>
       <a href="https://www.figma.com/file/z1s6F1bjErTmMv7s9jzT1S/PiSeth-Seam?type=design&node-id=0-1&t=08YHlUC7NI5ILpjq-0"
         target="_blank" rel="noopener noreferrer"
-        className="max-md:hidden absolute left-24 active:scale-150 transform duration-300"
-      >
-        <LazyLoadImage
-          className={`"h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
+        className={`max-md:hidden absolute left-24 active:scale-150 transform duration-300
+        h-[35px] w-[35px] rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
           border-[2px] dark:border-slate-500 border-slate-400
           ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}
+      >
+        <LazyLoadImage
+          className={`rounded-[100%]`}
           src={currentImg}
           alt="My Profile"
         />
@@ -128,11 +129,12 @@ const NavBar = () => {
       <div className="hidden max-md:flex items-center">
         <a href="https://www.figma.com/file/z1s6F1bjErTmMv7s9jzT1S/PiSeth-Seam?type=design&node-id=0-1&t=08YHlUC7NI5ILpjq-0"
           target="_blank" rel="noopener noreferrer"
-          className="active:scale-150 transform duration-300">
-          <LazyLoadImage
-            className={`"h-[35px] w-[35px] object-cover rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
+          className={`active:scale-150 transform duration-300
+          h-[35px] w-[35px] rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
           border-[2px] dark:border-slate-500 border-slate-400
-          ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}
+          ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}>
+          <LazyLoadImage
+            className={`rounded-[100%]`}
             src={currentImg}
             alt="My Profile"
           />
