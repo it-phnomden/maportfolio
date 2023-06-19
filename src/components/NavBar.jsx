@@ -48,7 +48,7 @@ const NavBar = () => {
       if (currentImg === '/maportfolio/static/media/profile.71ab2f04c9052da6949d.png')
         setCurrentImg(cv)
       else setCurrentImg(profile)
-    }, 3000)
+    }, 2000)
 
     return () => clearInterval(intervalId);
   }, [currentImg])
