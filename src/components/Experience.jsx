@@ -10,7 +10,7 @@ import csharp from "../assets/experiences/csharp.png"
 import java from "../assets/experiences/java.png"
 import springboot from "../assets/experiences/spring-boot.png"
 import sql from "../assets/experiences/sql.png"
-import github from "../assets/experiences/github.png"
+import git from "../assets/experiences/github.png"
 import docker from "../assets/experiences/docker.png"
 import springjpa from "../assets/experiences/spring-jpa.png"
 import postgresql from "../assets/experiences/postgresql.png"
@@ -80,8 +80,8 @@ const skills = [
     title: "Mybatis",
   }, {
     id: 12,
-    src: github,
-    title: "GitHub",
+    src: git,
+    title: "GIT",
   }
 ]
 
