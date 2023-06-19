@@ -11,6 +11,10 @@ import java from "../assets/experiences/java.png"
 import springboot from "../assets/experiences/spring-boot.png"
 import sql from "../assets/experiences/sql.png"
 import github from "../assets/experiences/github.png"
+import docker from "../assets/experiences/docker.png"
+import springjpa from "../assets/experiences/spring-jpa.png"
+import postgresql from "../assets/experiences/postgresql.png"
+import mybatis from "../assets/experiences/mybatis.png"
 import { GiSkills } from "react-icons/gi"
 
 const skills = [
@@ -59,10 +63,26 @@ const skills = [
     src: sql,
     title: "SQL",
   }, {
+    id: 14,
+    src: springjpa,
+    title: "Data-JPA",
+  }, {
+    id: 15,
+    src: postgresql,
+    title: "Postgresql",
+  }, {
+    id: 13,
+    src: docker,
+    title: "Docker",
+  }, {
+    id: 16,
+    src: mybatis,
+    title: "Mybatis",
+  }, {
     id: 12,
     src: github,
     title: "GitHub",
-  },
+  }
 ]
 
 const Experience = () => {
@@ -88,8 +108,10 @@ const Experience = () => {
             skills.map(({ id, src, title }) => (
               <div
                 key={id}
-                className={`bg-[#F4F6F8] dark:bg-[#161B22] rounded-2xl p-5 text-center`}>
-                <img src={src} alt="html.png" />
+                className={`bg-[#F4F6F8] dark:bg-[#161B22] rounded-2xl p-5 flex flex-col items-center`}>
+                <img src={src} alt="html.png"
+                  className="h-20 object-contain"
+                />
                 <p className="mt-2">{title}</p>
               </div>
             ))
