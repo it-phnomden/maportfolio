@@ -63,23 +63,23 @@ const skills = [
     src: sql,
     title: "SQL",
   }, {
-    id: 14,
+    id: 12,
     src: springjpa,
     title: "Data-JPA",
   }, {
-    id: 15,
+    id: 13,
     src: postgresql,
     title: "Postgresql",
   }, {
-    id: 13,
+    id: 14,
     src: docker,
     title: "Docker",
   }, {
-    id: 16,
+    id: 15,
     src: mybatis,
     title: "Mybatis",
   }, {
-    id: 12,
+    id: 16,
     src: git,
     title: "GIT",
   }
