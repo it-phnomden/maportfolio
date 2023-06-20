@@ -15,6 +15,7 @@ import docker from "../assets/experiences/docker.png"
 import springjpa from "../assets/experiences/spring-jpa.png"
 import postgresql from "../assets/experiences/postgresql.png"
 import mybatis from "../assets/experiences/mybatis.png"
+import php from "../assets/experiences/php.png"
 import { GiSkills } from "react-icons/gi"
 
 const skills = [
@@ -68,18 +69,22 @@ const skills = [
     title: "Data-JPA",
   }, {
     id: 13,
+    src: php,
+    title: "PHP",
+  }, {
+    id: 14,
     src: postgresql,
     title: "Postgresql",
   }, {
-    id: 14,
+    id: 15,
     src: docker,
     title: "Docker",
   }, {
-    id: 15,
+    id: 16,
     src: mybatis,
     title: "Mybatis",
   }, {
-    id: 16,
+    id: 17,
     src: git,
     title: "GIT",
   }
