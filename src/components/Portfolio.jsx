@@ -21,8 +21,8 @@ const projects = [
   }, {
     id: 3,
     imgSrc: khlakhlouk,
-    demoLink: 'https://pisethseam.github.io/khlakhlouk/',
-    sourceLink: 'https://github.com/PiSethSeam/khlakhlouk'
+    demoLink: 'https://pisethseam.github.io/khla-khloak/',
+    sourceLink: 'https://github.com/PiSethSeam/khla-khloak'
   }, {
     id: 4,
     imgSrc: dictionary,
@@ -64,10 +64,12 @@ const Portfolio = () => {
           {
             projects.map(({ id, imgSrc, demoLink, sourceLink }) => (
               <div key={id}
-                className="rounded-2xl p-5 text-center bg-[#F4F6F8] dark:bg-[#161B22]"
+                className="rounded-2xl p-4 text-center bg-[#F4F6F8] dark:bg-[#161B22] flex flex-col items-center"
               >
-                <img src={imgSrc} alt="Calculator.png" />
-                <div className="flex justify-evenly" id="check-out">
+                <img src={imgSrc} alt="Calculator.png"
+                className="h-40 object-contain"
+                />
+                <div className="flex space-x-6" id="check-out">
                   <a href={demoLink} target="_blank" rel="noopener noreferrer">Live</a>
                   <a href={sourceLink} target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
