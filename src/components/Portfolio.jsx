@@ -21,8 +21,8 @@ const projects = [
   }, {
     id: 3,
     imgSrc: khlakhlouk,
-    demoLink: 'https://pisethseam.github.io/khla-khloak/',
-    sourceLink: 'https://github.com/PiSethSeam/khla-khloak'
+    demoLink: 'https://pisethseam.github.io/khla-khlouk/',
+    sourceLink: 'https://github.com/PiSethSeam/khla-khlouk'
   }, {
     id: 4,
     imgSrc: dictionary,
