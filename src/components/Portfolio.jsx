@@ -36,8 +36,8 @@ const projects = [
   }, {
     id: 6,
     imgSrc: horoscope,
-    demoLink: 'https://pisethseam.github.io/horoscopse/',
-    sourceLink: 'https://github.com/PiSethSeam/horoscopse'
+    demoLink: 'https://pisethseam.github.io/khmer-horoscope/',
+    sourceLink: 'https://github.com/PiSethSeam/khmer-horoscope'
   }
 ]
 
