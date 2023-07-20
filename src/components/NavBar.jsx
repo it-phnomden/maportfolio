@@ -62,7 +62,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-white h-[60px] px-5 md:px-7 flex justify-between items-center fixed z-10`}
+      className={`w-screen bg-slate-200 dark:bg-[rgb(22,27,34)] dark:text-white h-[60px] px-5 lg:px-12 md:px-7 flex justify-between items-center fixed z-10`}
     >
       <Link to="home" smooth duration={500}>
         <h1 className="font-signature font-extrabold text-2xl mt-[10px] select-none cursor-pointer transform duration-100 active:tracking-widest">
@@ -71,7 +71,7 @@ const NavBar = () => {
       </Link>
       <a href="https://www.figma.com/file/z1s6F1bjErTmMv7s9jzT1S/PiSeth-Seam?type=design&node-id=0-1&t=08YHlUC7NI5ILpjq-0"
         target="_blank" rel="noopener noreferrer"
-        className={`max-md:hidden absolute left-24 active:scale-150 transform duration-300
+        className={`max-md:hidden absolute left-24 lg:left-28 active:scale-150 transform duration-300
         h-[35px] w-[35px] rounded-[100%] mx-5 p-[2px] bg-slate-300  dark:bg-slate-800 
           border-[2px] dark:border-slate-500 border-slate-400
           ${currentImg === '/maportfolio/static/media/cv.7cfd3e3848953db89f1a.png' ? 'animate-pulse' : ''}`}
