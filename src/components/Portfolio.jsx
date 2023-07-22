@@ -4,7 +4,7 @@ import portfolio from "../assets/portfolio/portfolio.png";
 import khlakhlouk from "../assets/portfolio/khlakhlouk.png";
 import dictionary from "../assets/portfolio/dictionary.png";
 import music from "../assets/portfolio/music.png";
-import horoscope from "../assets/portfolio/horoscope.png";
+import prediction from "../assets/portfolio/prediction.png";
 import { MdPermContactCalendar } from "react-icons/md"
 
 const projects = [
@@ -23,21 +23,22 @@ const projects = [
     imgSrc: khlakhlouk,
     demoLink: 'https://pisethseam.github.io/khla-khlouk/',
     sourceLink: 'https://github.com/PiSethSeam/khla-khlouk'
-  }, {
+  }
+  , {
     id: 4,
+    imgSrc: prediction,
+    demoLink: 'https://pisethseam.github.io/khmer-horoscope/',
+    sourceLink: 'https://github.com/PiSethSeam/khmer-horoscope'
+  }, {
+    id: 5,
     imgSrc: dictionary,
     demoLink: 'https://pisethseam.github.io/dictionary/',
     sourceLink: 'https://github.com/PiSethSeam/dictionary'
   }, {
-    id: 5,
+    id: 6,
     imgSrc: music,
     demoLink: 'https://pisethseam.github.io/music/',
     sourceLink: 'https://github.com/PiSethSeam/music'
-  }, {
-    id: 6,
-    imgSrc: horoscope,
-    demoLink: 'https://pisethseam.github.io/khmer-horoscope/',
-    sourceLink: 'https://github.com/PiSethSeam/khmer-horoscope'
   }
 ]
 
