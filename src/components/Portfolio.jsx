@@ -37,8 +37,8 @@ const projects = [
   }, {
     id: 6,
     imgSrc: music,
-    demoLink: 'https://pisethseam.github.io/music/',
-    sourceLink: 'https://github.com/PiSethSeam/music'
+    demoLink: 'https://pisethseam.github.io/jomreang/',
+    sourceLink: 'https://github.com/PiSethSeam/jomreang'
   }
 ]
 
