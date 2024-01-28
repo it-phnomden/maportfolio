@@ -1,9 +1,6 @@
 import React from "react";
 import HeroImage from "./../assets/HeroImage.png";
-import pisethellise from "./../assets/pisethellise.JPG";
-import pisethalone from "./../assets/pisethalone.JPG";
-import Iellise from "./../assets/Iellise.JPEG";
-import phpiseth from "./../assets/piseth.png";
+import wingbank from "./../assets/wingbank.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -20,12 +17,14 @@ const Home = () => {
           <p className="text-2xl md:text-3xl">
             Hi, I'm <b className="dark:t-g t-g2">PiSeth</b>
           </p>
-          <p className="dark:t-g t-g2 font-extrabold tracking-tight py-1 md:py-2">
-            A Software Engineer
-          </p>
+            <LazyLoadImage
+              className="max-sm:w-[300px] sm:w-[500px]"
+              src={wingbank}
+              alt="My Profile"
+            />
         </div>
         <p className="md:pr-7 indent-7 text-lg">
-          I have 3 years of experience building and desgining core banking
+          I have over 3 years of experience building and desgining core banking
           system using Java and Spring framework. Currently, I love to work on
           web and mobile application using technologies like ReactJs,
           TailwindCSS, NodeJs, Flutter. To know me more let's scroll down 😉
