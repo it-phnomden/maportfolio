@@ -16,6 +16,9 @@
   body {
     @apply light-mode dark:dark-mode;
   }
+  hr {
+    @apply bg-white
+  }
   .social-link>a{
     @apply mx-3 md:mx-5 md:hover:opacity-70
   }

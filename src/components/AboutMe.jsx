@@ -16,15 +16,18 @@ const AboutMe = () => {
           <p className="text-xl font-extrabold w-fit">About Me</p>
         </div>
         <p className="text-lg indent-7 p-3 pb-0">
-          I'm a software engineer with three years of experience in developing
-          and maintaining software applications. I have experience in designing
-          and implementing software solutions for various clients and projects.
-          I'm proficient in programming languages such as Java, C#, PHP, Dart,
-          Swift, Tyepscript and Javascript. I graduated from Royal University of
-          Phnom Penh with a degree in Computer Science and have been working as
-          a Software Engineer at Mobile C&C Cambodia Company since June 2020.
+          I'm a software developer with over three years of experience in
+          developing and maintaining software applications. I have experience in
+          designing and implementing software solutions for various clients and
+          projects. I'm proficient in Java and Javascript language and I have
+          ability to code on other language such as C#, PHP, Dart, Swift and
+          Tyepscript. I graduated from Royal University of Phnom Penh with a
+          degree in Computer Science. Currently, I work at Wing bank as a
+          Back-End developer.
         </p>
-        <h1 className="p-3 text-xl font-extrabold w-fit">Education Background</h1>
+        <h1 className="p-3 text-xl font-extrabold w-fit">
+          Education Background
+        </h1>
         <ul className="timeline timeline-vertical w-[200px]">
           <li>
             <div className="timeline-start">2012-2015</div>
