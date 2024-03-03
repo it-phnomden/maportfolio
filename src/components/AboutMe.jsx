@@ -45,7 +45,7 @@ const AboutMe = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw]">
+            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw] bg-[#e9ecf3] dark:bg-[#1f252c] border-none">
               Finished Sok Ann Tounlap High school
             </div>
             <hr />
@@ -67,7 +67,7 @@ const AboutMe = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw]">
+            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw] bg-[#e9ecf3] dark:bg-[#1f252c] border-none">
               Studied English at Paññāsāstra University of Cambodia
             </div>
             <hr />
@@ -89,7 +89,7 @@ const AboutMe = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw]">
+            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw] bg-[#e9ecf3] dark:bg-[#1f252c] border-none">
               Gratuated from Royal University of Phnom Penh
             </div>
             <hr />
@@ -111,7 +111,7 @@ const AboutMe = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw]">
+            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw] bg-[#e9ecf3] dark:bg-[#1f252c] border-none">
               Completed Desktop development course at ANT Training
             </div>
             <hr />
@@ -133,7 +133,7 @@ const AboutMe = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw]">
+            <div className="timeline-end timeline-box w-[500px] max-md:w-[60vw] bg-[#e9ecf3] dark:bg-[#1f252c] border-none">
               Completed Web development course at ANT Training
             </div>
           </li>
