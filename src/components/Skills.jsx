@@ -90,10 +90,10 @@ const skills = [
   }
 ]
 
-const Experience = () => {
+const Skills = () => {
   return (
     <div
-      name="experience"
+      name="skill"
       className="md:h-screen flex flex-col justify-center max-md:pt-[70px]"
     >
       <div>
@@ -101,7 +101,7 @@ const Experience = () => {
           className="bg-[#F4F6F8] dark:bg-[#161B22] p-4 rounded-t-2xl mb-3">
           <div className="flex items-center rounded-2xl py-3 bg-[#e9ecf3] dark:bg-[#1f252c] ">
             <GiSkills size={30} className="mx-3" />
-            <p className="text-xl font-extrabold w-fit ">Experience</p>
+            <p className="text-xl font-extrabold w-fit ">Skill</p>
           </div>
           <p className="text-lg indent-7 p-3 pb-0">
             These are the technologies that I have worked with.
@@ -126,4 +126,4 @@ const Experience = () => {
     </div>
   );
 };
-export default Experience;
+export default Skills;

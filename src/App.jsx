@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
@@ -21,7 +21,7 @@ const App = () => {
         <Home />
         <AboutMe />
         <Portfolio />
-        <Experience />
+        <Skills />
         <Contact />
       </div>
         <Footer />
