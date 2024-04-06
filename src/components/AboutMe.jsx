@@ -28,7 +28,7 @@ const AboutMe = () => {
         <h1 className="p-3 text-xl font-extrabold w-fit">
           Education Background
         </h1>
-        <ul className="timeline timeline-vertical w-[200px]">
+        <ul data-aos="fade-up" className="timeline timeline-vertical w-[200px]">
           <li>
             <div className="timeline-start">2012-2015</div>
             <div className="timeline-middle">
