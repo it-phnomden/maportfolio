@@ -1,5 +1,6 @@
 import React from "react";
 import calculator from "../assets/portfolio/calculator.png";
+import itphnomden from "../assets/portfolio/it-phnomden.jpg";
 import portfolio from "../assets/portfolio/portfolio.png";
 import khlakhlouk from "../assets/portfolio/khlakhlouk.png";
 import dictionary from "../assets/portfolio/dictionary.png";
@@ -9,6 +10,11 @@ import { MdPermContactCalendar } from "react-icons/md"
 
 const projects = [
   {
+    id: 0,
+    imgSrc: itphnomden,
+    demoLink: 'https://it-phnomden.github.io/it-phnomden/',
+    sourceLink: 'https://github.com/it-phnomden/it-phnomden'
+  }, {
     id: 1,
     imgSrc: calculator,
     demoLink: 'https://it-phnomden.github.io/easy-calculate/',
